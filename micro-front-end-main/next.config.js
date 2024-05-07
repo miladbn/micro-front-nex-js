@@ -1,10 +1,8 @@
-const {
-  withModuleFederation,
-} = require("@module-federation/nextjs-mf");
+const { withModuleFederation } = require("@module-federation/nextjs-mf");
 module.exports = {
   future: { webpack5: true },
   images: {
-    domains: ['upload.wikimedia.org'],
+    domains: ["upload.wikimedia.org"],
   },
   webpack: (config, options) => {
     const { isServer } = options;
@@ -16,8 +14,7 @@ module.exports = {
         name: "app1",
       },
       filename: "static/runtime/app1RemoteEntry.js",
-      remotes: {
-      },
+      remotes: {},
       exposes: {
         "./luigi": "./components/luigi",
       },

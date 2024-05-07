@@ -1,7 +1,6 @@
-import Head from 'next/head'
-import Luigi from '../components/luigi'
-import styles from '../styles/Home.module.css'
-
+import Head from "next/head";
+import Luigi from "../components/luigi";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
@@ -14,5 +13,5 @@ export default function Home() {
 
       <Luigi />
     </div>
-  )
+  );
 }
